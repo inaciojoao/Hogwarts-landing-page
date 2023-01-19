@@ -1,0 +1,231 @@
+:root{
+    --gap: 3rem;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'lumos';
+    src: url('LUMOS.TTF')
+    format(trutype);
+    font-weight: normal;
+    font-size: normal;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+.titulo{
+    font-family: 'lumos';
+    font-size: normal;
+    font-weight: normal;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 5.5rem;
+    padding-bottom: 3rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+a{
+    text-decoration: none;
+}
+.main-bg{
+    background: #0a1128;
+    background-size:cover;
+    background-position:center center;
+}
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 10rem var(--gap);
+}
+.menu-spacing{
+    height: 7.7rem;
+}
+.section{
+    min-height: 100vh;
+    padding: 10rem var(--gap);
+}
+.cor-1{
+    color: crimson;
+}
+.white-bg{
+    color: #0a1128;
+    background: #ffffff;
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right:0;
+    border-bottom: 0.1rem solid #EEE;
+    background:#ffffff
+}
+.menu-content{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0a1128;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+
+
+}
+.menu ul{
+    background: #ffffff;
+    display: flex;
+    list-style: none;
+    
+}
+.menu ul li a{
+    background: #ffffff;
+    display: block;
+    padding: 2rem;
+    position:relative;
+}
+.menu ul li a ::after{
+    content: " ";
+    position: relative;
+    bottom: 1rem;
+    left: 50%;
+    width: 50%;
+    height: 0.2rem;
+    background: crimson;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a :hover ::after{
+    width: 50%;
+    left: 25%;
+
+}
+.menu h1{
+    font-size: 3.5rem;
+}
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+.intro-text-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+    transition: all 300ms ease-in-out;
+}
+.intro-img img:hover{
+    transform: translate(-3%,3%), scale(1.1), rotate(5deg) ;
+}
+
+.grifinoria-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+p{
+    margin-bottom: 9rem;
+}
+.grifinoria-text-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.grifinoria-img img{
+  max-width: 80%;
+  height: auto;
+  transition: all 300ms ease-in-out;
+}
+.grifinoria-img img:hover{
+    border-radius: 10%;
+    transform: scale(0.9);
+}
+
+.grid-sonserina{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap)
+}
+.grid-sonserina img{
+    max-width: 36rem;
+    max-height: 36rem;
+    transition: all 300ms ease-in-out;
+}
+.grid-sonserina img:hover{
+    transform: translate(-3%, 3%) scale(1.1) rotate(5deg);
+}
+#sonserina-gallery{
+    display: flex;
+    justify-content: center;
+}
+#lufa-gallery{
+    display: flex;
+    justify-content: center;
+}
+.grid-lufa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap);
+}
+.grid-lufa img{
+    max-width: 36rem;
+    max-height: 36rem;
+    min-height: 20rem;
+    min-width: 20rem;
+    transition: all 300ms ease-in-out;
+}
+.grid-lufa img:hover{
+    transform: translate(5%, -5%) scale(1.1) rotate(3deg) ;
+    border-radius: 10%;
+    
+}
+.grid-corvinal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap);
+}
+.grid-corvinal img{
+    min-height: 20rem;
+    min-width: 20rem;
+    max-width: 30rem;
+    max-height: 30rem;
+    transition: all 300ms ease-in-out;  
+}
+.grid-corvinal img:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+#corvinal-gallery{
+    display: flex;
+    justify-content: center;
+}
